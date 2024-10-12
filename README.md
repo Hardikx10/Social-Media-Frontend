@@ -1,8 +1,8 @@
-# React + Vite
+# Social Media User Submissions Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a React-based frontend for a user submission system where users can submit their name, social media handle, and upload multiple images. The submitted data is displayed on an Admin Dashboard, where admins can view the uploaded images and user details. The frontend communicates with a backend API to manage the submissions and dynamically updates the dashboard with the latest submissions every few seconds.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
