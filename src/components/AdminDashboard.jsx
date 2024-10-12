@@ -17,7 +17,7 @@ const AdminDashboard = () => {
 
     const fetchSubmissions = async () => {
         try {
-            const res = await axios.get('http://localhost:5000/api/submissions');
+            const res = await axios.get('https://social-media-backend-5t0a.onrender.com/api/submissions');
             setSubmissions(res.data);
         } catch (error) {
             console.error('Error fetching submissions:', error);

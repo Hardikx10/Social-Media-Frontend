@@ -26,7 +26,7 @@ const SubmissionForm = () => {
         }
 
         try {
-            const res = await axios.post('http://localhost:5000/api/submissions', formData, {
+            const res = await axios.post('https://social-media-backend-5t0a.onrender.com/api/submissions', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
