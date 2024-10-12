@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+const apiUrl = import.meta.env.VITE_BACKEND_URL;
+
 const SubmissionForm = () => {
     const [name, setName] = useState('');
     const [socialHandle, setSocialHandle] = useState('');
@@ -26,7 +28,7 @@ const SubmissionForm = () => {
         }
 
         try {
-            const res = await axios.post('https://social-media-backend-5t0a.onrender.com/api/submissions', formData, {
+            const res = await axios.post(`${apiUrl}/api/submissions`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

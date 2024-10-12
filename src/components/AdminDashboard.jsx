@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const apiUrl = import.meta.env.VITE_BACKEND_URL;
+
 const AdminDashboard = () => {
     const [submissions, setSubmissions] = useState([]);
 
@@ -17,7 +19,7 @@ const AdminDashboard = () => {
 
     const fetchSubmissions = async () => {
         try {
-            const res = await axios.get('https://social-media-backend-5t0a.onrender.com/api/submissions');
+            const res = await axios.get(`${apiUrl}/api/submissions`);
             setSubmissions(res.data);
         } catch (error) {
             console.error('Error fetching submissions:', error);
